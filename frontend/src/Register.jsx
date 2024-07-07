@@ -12,7 +12,7 @@ const Register = () => {
     const user = { name, email, password };
 
     try {
-      await axios.post("http://localhost:5000/register", user);
+      await axios.post("https://mern-repo-lac.vercel.app/register", user);
       alert("User registered successfully");
     } catch (error) {
       alert("Error registering user");
